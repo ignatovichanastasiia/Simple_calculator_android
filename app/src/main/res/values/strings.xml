@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyCourse01</string>
+    <string name="name">Simple Calculator</string>
+    <string name="button_plus">+</string>
+    <string name="button_minus">-</string>
+    <string name="button_multiply">x</string>
+    <string name="button_divide">/</string>
+    <string name="button_c">c</string>
+    <string name="button_equals">=</string>
+    <string name="insert_first">Insert first number</string>
+    <string name="insert_second">Insert second number</string>
+    <string name="result">Result</string>
+    <string name="all_actions">All actions:</string>
+
+
+
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="23dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="330dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="52dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/name"
+            android:textSize="34sp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextNumberFirst"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:fontFamily="@font/aclonica"
+            android:autofillHints="@string/insert_first"
+            android:ems="10"
+            android:hint="Insert first number"
+            android:inputType="number"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout02"
+        android:layout_width="330dp"
+        android:layout_height="115dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout01">
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:text="@string/button_plus" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:text="@string/button_minus" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:text="@string/button_multiply" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:text="@string/button_divide" />
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:text="@string/button_c" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout03"
+        android:layout_width="330dp"
+        android:layout_height="187dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout02">
+
+        <EditText
+            android:id="@+id/editTextNumberSecond"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:fontFamily="@font/aclonica"
+            android:autofillHints="@string/insert_second"
+            android:ems="10"
+            android:hint="Insert second number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonEq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_equals" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/aclonica"
+            android:textSize="34sp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout04"
+        android:layout_width="330dp"
+        android:layout_height="187dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout03">
+
+        <TextView
+            android:id="@+id/textAction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/all_actions"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
